@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout — Shoply</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/products.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header container header-grid">
+    <div class="brand"><a href="index.html" class="logo">Shoply</a></div>
+    <div class="actions">
+      <a href="cart.html" class="cart-btn">🛒 <span id="cartCount">0</span></a>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="checkout-section card">
+      <h1>Checkout</h1>
+      <form id="checkoutForm" class="checkout-form">
+        <div class="field"><label>Full name</label><input id="fullName" required></div>
+        <div class="field"><label>Address</label><input id="address" required></div>
+        <div class="field"><label>City</label><input id="city" required></div>
+        <div class="field"><label>ZIP</label><input id="zip" required></div>
+        <div class="field"><label>Payment (card number)</label><input id="card" required></div>
+        <button class="btn primary" type="submit">Place Order</button>
+      </form>
+      <div id="orderPlaced" class="card" style="display:none;">
+        <h3>Thank you! Order placed.</h3>
+        <p id="orderSummary"></p>
+        <a href="index.html" class="btn">Continue Shopping</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year4"></span> Shoply • Static demo</p>
+  </footer>
+</body>
+</html>

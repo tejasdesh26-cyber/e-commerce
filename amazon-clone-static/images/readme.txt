@@ -1,0 +1,1 @@
+Place your product images here (headphones.jpg, tshirt.jpg, notebook.jpg, bottle.jpg, speaker.jpg). If images are missing, default online placeholders will be used.

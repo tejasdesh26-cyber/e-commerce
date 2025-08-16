@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shoply — Modern Store</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/products.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <button id="langBtn" class="chip">EN</button>
+        <a href="index.html" class="logo">Shoply</a>
+      </div>
+      <div class="search">
+        <input id="searchInput" placeholder="Search products..." />
+        <button id="searchBtn">Search</button>
+      </div>
+      <div class="actions">
+        <button id="darkToggle" class="icon-btn" aria-label="Toggle dark">🌙</button>
+        <a href="cart.html" class="cart-btn">🛒 <span id="cartCount">0</span></a>
+      </div>
+    </div>
+    <nav class="nav container">
+      <ul id="categoryList" class="nav-list">
+        <li><a href="#" data-category="all">All</a></li>
+        <li><a href="#" data-category="electronics">Electronics</a></li>
+        <li><a href="#" data-category="clothing">Clothing</a></li>
+        <li><a href="#" data-category="books">Books</a></li>
+        <li><a href="#" data-category="home">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container main">
+    <section class="hero">
+       <h1 id="heroTitle">Discover great products — fast</h1>
+      <p id="heroSubtitle">Local demo store — works offline (no backend)</p>
+     
+    </section>
+
+    <section class="products">
+      <h2 id="productsHeading">Featured Products</h2>
+      <div id="productsGrid" class="products-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Shoply • made by Tejas Deshpande All rights reserved</p>
+  </footer>
+</body>
+</html>
